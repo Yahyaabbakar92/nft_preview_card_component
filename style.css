@@ -23,11 +23,33 @@ body {
     max-height: 330px;
 }
 
+.pic:hover {
+    background-color: hsl(178, 100%, 50%);
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    background-image: url('imgs/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero {
     max-width: 280px;
     max-height: 280px;
     margin: 20px 22px 0px 22px;
     border-radius: 8px;
+}
+
+.hero:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    position: relative;
+    left: -25px;
+    top: -20px;
 }
 
 .content {
@@ -39,6 +61,11 @@ body {
     color: hsl(0, 0%, 100%);
     font-weight: 400;
     padding-top: 28px;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .description {
@@ -95,6 +122,14 @@ body {
     max-height: 30px;
     border: white solid 1px;
     border-radius: 50%;
+}
+
+span {
+    color: white;
+}
+span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
 
 @media screen and (min-width: 400px) {
